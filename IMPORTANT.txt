@@ -1,0 +1,59 @@
+pip install numpy opencv-python scikit-image shapely rasterio geopandas scikit-learn
+
+| Task Number | Task Name                        | Description                                                                    |
+| ----------- | -------------------------------- | ------------------------------------------------------------------------------ |
+| 1           | Data Acquisition & Preprocessing | Collect “before” and “after” images; preprocess (resize, normalize, mask).     |
+| 2           | Fire/Burn Area Detection         | Segment fire-affected zones using pixel thresholding or indices.               |
+| 3           | Burn Severity & Recovery Scoring | Classify severity; analyze regrowth; score recovery potential.                 |
+| 4           | Change Detection                 | Compare images to identify land cover change/clearings.                        |
+| 5           | Illegal Activity Pattern Search  | Find mining pits (rectangles), logging, bulldozer paths via shape analysis.    |
+| 6           | Path/Trail Detection             | Use edge detection, Hough line, skeletonization to map paths/trails.           |
+| 7           | Risk Layer Generation            | Compile all detections into GIS-ready risk maps/layers for output.             |
+| 8           | Ownership Check                  | Integrate ownership data (as available) to mark activity on govt/private land. |
+| 9           | Documentation & Reporting        | Create summary, CSV, figures for dashboard/final review.                       |
+
+
+.venv\Scripts\Activate
+
+pip install -r requirements.txt
+
+1.Data Acquisition & Preprocessing
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Data Acquisition & Preprocessing"
+pip install opencv-python numpy
+python preprocess.py
+python view_images.py
+
+2.Fire/Burn Area Detection
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Fire/Burn Area Detection" 
+python fire_detection.py
+
+3.Burn Severity & Recovery Scoring
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Burn Severity & Recovery Scoring"
+pip install opencv-python numpy matplotlib
+python burn_severity_recovery.py
+
+4.Change Detection 
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Change Detection"
+python change_detection.py
+
+5. Illegal Activity Pattern Search
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Illegal Activity Pattern Search"
+python illegal_activity_detection.py
+
+6.Path/Trail Detection
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Path  Trail Detection"
+python trail_detection.py
+
+7.Risk Layer Generation
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Risk Layer Generation"
+python risk_layer_generation.py
+
+8.Ownership Check
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Ownership Check"
+python ownership_check.py
+
+9.Documentation & Reporting 
+cd "C:\Users\ujasv\OneDrive\Desktop\forest mem3\Z Documentation & Reporting"
+python project_reporting.py
+
+(In the above ive used my location to enter, please check ur location to enter files)
